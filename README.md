@@ -1,95 +1,36 @@
-# When We Met
-
-A Next.js application that creates personalized dating profiles using AI. Users answer 5 questions, upload a photo, and receive a creative bio with a GTA-style character illustration.
-
-## Features
-
-- 📝 Multi-step questionnaire flow
-- 📸 Camera capture functionality
-- 🤖 Google Gemini AI for persona generation
-- 🎨 FAL AI for GTA-style image transformation
-- 🎯 Modern, responsive UI with Tailwind CSS
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
-### Prerequisites
+First, run the development server:
 
-- Node.js 18+ 
-- npm, yarn, pnpm, or bun
-- Google Gemini API key
-- FAL AI API key
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/florishoppe/whenwemet.git
-cd whenwemet
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Create a `.env.local` file in the root directory:
-```env
-GOOGLE_API_KEY=your_gemini_api_key_here
-FAL_API_KEY_ATHAR_ONLY=your_fal_api_key_here
-```
-
-4. Run the development server:
 ```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Environment Variables
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-Required environment variables:
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-- `GOOGLE_API_KEY` - Google Gemini API key ([Get one here](https://makersuite.google.com/app/apikey))
-- `FAL_API_KEY_ATHAR_ONLY` - FAL AI API key ([Get one here](https://fal.ai/dashboard))
+## Learn More
 
-## Deployment
+To learn more about Next.js, take a look at the following resources:
 
-The project is ready to deploy! See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### Quick Deploy to Vercel
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-1. Push your code to GitHub (already done ✅)
-2. Go to [vercel.com](https://vercel.com) and import your repository
-3. Add environment variables in the Vercel dashboard
-4. Deploy!
+## Deploy on Vercel
 
-For more deployment options, see [DEPLOYMENT.md](./DEPLOYMENT.md).
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## Project Structure
-
-```
-whenwemet/
-├── app/                    # Next.js app router pages
-│   ├── api/               # API routes (Gemini, FAL)
-│   ├── questions/         # Questionnaire page
-│   ├── photo/             # Photo capture page
-│   ├── processing/        # Processing page
-│   ├── result/            # Results page
-│   └── ...
-├── components/            # React components
-├── lib/                   # Utilities and types
-└── public/                # Static assets
-```
-
-## Tech Stack
-
-- **Framework**: Next.js 16 (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **AI Services**: 
-  - Google Gemini (persona generation)
-  - FAL AI (image transformation)
-
-## License
-
-Private project
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
